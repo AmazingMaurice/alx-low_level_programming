@@ -1,4 +1,8 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
 /**
  * get_nodeint_at_index - finds a given node in a linked list
  * @head : pointer to the head of the linked list
@@ -8,12 +12,12 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-size_t n;
+size_t i;
 
-for (n = 0; (n < index) && (head->next); n++)
+for (i = 0; (i < index) && (head->next); i++)
 head = head->next;
 
-if (n < index)
+if (i < index)
 return (NULL);
 
 return (head);
