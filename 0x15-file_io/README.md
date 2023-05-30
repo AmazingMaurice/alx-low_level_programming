@@ -1,3 +1,0 @@
-0x15. C - File I/O
-learning the under ground workings of the programming system ...
-learning how to create files and how it works 
